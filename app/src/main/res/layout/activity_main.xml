@@ -1,0 +1,80 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/viewBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#63ffffff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/fab_search"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabSettings"
+        app:layout_constraintLeft_toLeftOf="@+id/fabSettings"
+        app:layout_constraintRight_toRightOf="@+id/fabSettings"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/fab_settings"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabShare"
+        app:layout_constraintLeft_toLeftOf="@+id/fabShare"
+        app:layout_constraintRight_toRightOf="@+id/fabShare"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/fab_share"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabMenu"
+        app:layout_constraintLeft_toLeftOf="@+id/fabMenu"
+        app:layout_constraintRight_toRightOf="@+id/fabMenu"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/fab_add"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:pressedTranslationZ="12dp" />
+
+</android.support.constraint.ConstraintLayout>
